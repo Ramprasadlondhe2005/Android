@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_below="@id/num1"
+        android:hint="Enter Number 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_below="@id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_below="@id/num2"
+        android:layout_toRightOf="@id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_below="@id/num2"
+        android:layout_toRightOf="@id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_below="@id/num2"
+        android:layout_toRightOf="@id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="x"/>
+
+</RelativeLayout>

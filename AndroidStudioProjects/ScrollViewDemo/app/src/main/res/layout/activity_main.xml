@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" A view group that allows the view hierarchy placed within it to be
+scrolled. Scroll view may have only one direct child placed within it. To add multiple views
+within the scroll view, make the direct child you add a view group, for example
+LinearLayout, and place additional views within that LinearLayout. Scroll view supports
+vertical scrolling only. For horizontal scrolling, use HorizontalScrollView instead.
+Never add a RecyclerView or ListView to a scroll view. Doing
+so results in poor user interface performance and a poor user experience.Specifies how a view
+is positioned within a RelativeLayout. The relative layout containing the view uses the value
+of these layout parameters to determine where to position the view on the screen. If the view
+is not contained within a relative layout, these attributes are ignored. See the Relative Layout
+guide for example code demonstrating how to use relative layout's layout parameters in a
+layout XML.Adds a shared element to be transferred as part of the transition between
+Activities using cross-Activity scene animations. The position of the first element will be
+used as the epicenter for the exit Transition. The position of the associated shared element in
+the launched Activity will be the epicenter of its entering Transition.Adds a shared element to
+be transferred as part of the transition between Activities using cross-Activity scene
+animations. The position of the first element will be used as the epicenter for the exit
+Transition. The position of the associated shared element in the launched Activity will be the
+epicenter of its entering Transition.Adds a shared element to be transferred as part of the
+transition between Activities using cross-Activity scene animations. The position of the first
+element will be used as the epicenter for the exit Transition.
+The position of the associated shared element in the launched Activity will be the epicenter
+of its entering Transition.Adds a shared element to be transferred as part of the transition
+between Activities using cross-Activity scene animations. The position of the first element
+will be used as the epicenter for the exit Transition. The position of the associated shared
+element in the launched Activity will be the epicenter of its entering Transition.Adds a shared
+element to be transferred as part of the transition between Activities using cross-Activity
+scene animations. The position of the first element will be used as the epicenter for the exit
+Transition. The position of the associated shared element in the launched Activity will be the
+epicenter of its entering Transition.Adds a shared element to be transferred as part of the
+transition between Activities using cross-Activity scene animations. The position of the first
+element will be used as the epicenter for the exit Transition. The position of the associated
+shared element in the launched Activity will be the epicenter of its entering Transition."
+            android:textSize="30dp" />
+
+    </ScrollView>
+
+</LinearLayout>

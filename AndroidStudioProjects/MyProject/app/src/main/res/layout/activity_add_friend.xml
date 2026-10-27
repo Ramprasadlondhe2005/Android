@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    tools:context=".AddFriendActivity">
+
+    <EditText
+        android:id="@+id/etxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Name"/>
+    <EditText
+        android:id="@+id/etxtMobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:hint="Enter Mobile No."/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnAddFriendClick"
+        android:text="Add"/>
+
+</LinearLayout>

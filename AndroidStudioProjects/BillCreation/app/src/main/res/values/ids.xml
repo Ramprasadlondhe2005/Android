@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="itemNameTextView" type="id" />
+    <item name="itemPriceTextView" type="id" />
+    <item name="itemQuantityTextView" type="id" />
+    <item name="itemQuantityUnitTextView" type="id" />
+    <item name="itemUnitTextView" type="id" />
+    <item name="textViewDiscount" type="id" />
+    <item name="textViewFinalAmount" type="id" />
+</resources>

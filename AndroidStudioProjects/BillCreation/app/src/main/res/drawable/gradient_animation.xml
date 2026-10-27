@@ -1,0 +1,13 @@
+<!-- res/anim/gradient_animation.xml -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/gradient_start"
+        android:duration="1000" />
+    <item
+        android:drawable="@drawable/gradient_mid"
+        android:duration="1000" />
+    <item
+        android:drawable="@drawable/gradient_end"
+        android:duration="1000" />
+</animation-list>

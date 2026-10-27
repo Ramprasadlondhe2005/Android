@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_weight="0.50"
+        android:src="@drawable/bappa" />
+
+    <Button
+        android:id="@+id/btnClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clockwise" />
+    <Button
+        android:id="@+id/btnAnti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AntiClockwise" />
+    <Button
+        android:id="@+id/btnZI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zoom In" />
+    <Button
+        android:id="@+id/btnZO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zoom Out" />
+
+    <Button
+        android:id="@+id/btnFIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fade in/Out" />
+
+    <Button
+        android:id="@+id/btnSUD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide Up/Down" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="294dp"
+        android:layout_height="52dp"
+        android:layout_x="58dp"
+        android:layout_y="36dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:text="Login Window" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_x="24dp"
+        android:layout_y="107dp"
+        android:ems="10"
+        android:hint=" Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="166dp"
+        android:ems="10"
+        android:hint="Age" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="154dp"
+        android:layout_y="348dp"
+        android:onClick="Data"
+        android:text="Submit" />
+
+
+    <EditText
+        android:id="@+id/PhoneNo"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_x="36dp"
+        android:layout_y="236dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone" />
+</AbsoluteLayout>

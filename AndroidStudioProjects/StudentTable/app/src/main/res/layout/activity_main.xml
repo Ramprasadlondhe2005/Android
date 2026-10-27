@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:stretchColumns="*"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tbrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:layout_marginTop="200dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:text="Roll No" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:text="Marks" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#10D618"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#10D618"
+        android:textSize="18dp"
+        android:text="CM323" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#10D618"
+            android:textSize="18dp"
+            android:text="OM" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#10D618"
+            android:textSize="18dp"
+            android:text="88%" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#10D618"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#10D618"
+            android:textSize="18dp"
+            android:text="CM323" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#10D618"
+            android:textSize="18dp"
+            android:text="OM" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#10D618"
+            android:textSize="18dp"
+            android:text="88%" />
+
+    </TableRow>>
+
+
+
+
+
+
+</TableLayout>

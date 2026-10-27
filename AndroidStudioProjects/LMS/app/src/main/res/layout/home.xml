@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header layout with the app name -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:padding="8dp"/>
+
+    <!-- Sub-header layout with the toolbar title -->
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toolbar_title"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#3700B3"
+        android:padding="8dp"
+        android:layout_below="@id/tvAppName"/>
+
+    <!-- Section title for coding -->
+    <TextView
+        android:id="@+id/tvCodingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coding_title"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/tvToolbarTitle"/>
+
+    <!-- GridLayout for programming languages -->
+    <GridLayout
+        android:id="@+id/gridProgrammingLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="2"
+        android:layout_below="@id/tvCodingTitle"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Java Block -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clang"
+                android:contentDescription="@string/java"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/java"
+                android:textColor="#FFFFFF"
+                android:background="#6200EE"
+                android:padding="8dp"/>
+        </FrameLayout>
+
+        <!-- Repeat for other languages: Python, JavaScript, C++, Android, C Language -->
+        <!-- Python Block -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clang"
+                android:contentDescription="@string/python"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/python"
+                android:textColor="#FFFFFF"
+                android:background="#6200EE"
+                android:padding="8dp"/>
+        </FrameLayout>
+
+        <!-- JavaScript Block -->
+        <!-- ... Repeat for other languages -->
+
+    </GridLayout>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp">
+
+        <!-- Courses Button -->
+        <Button
+            android:id="@+id/btnCourses"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Courses"/>
+
+        <!-- About Button -->
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="About"/>
+    </LinearLayout>
+
+</RelativeLayout>

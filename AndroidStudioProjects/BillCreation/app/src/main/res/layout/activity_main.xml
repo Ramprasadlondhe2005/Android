@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/p3"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- TextView for Title -->
+            <TextView
+                android:id="@+id/txtViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:text="Billing Application For Grocery Store"
+                android:textColor="#d66b1a"
+                android:textSize="22dp"/>
+
+            <EditText
+                android:id="@+id/editTextItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtViewTitle"
+                android:layout_marginTop="24dp"
+                android:hint="Item Name"
+                android:inputType="text"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextItemName"
+                android:layout_marginTop="8dp"
+                android:hint="Item Price (₹)"
+                android:inputType="numberDecimal"
+                android:background="#FFFFFF"
+                android:textColor="#333333"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/layoutItemQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextItemPrice"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/editTextItemQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Item Quantity"
+                    android:inputType="number"
+                    android:textColor="#333333"/>
+
+                <Spinner
+                    android:id="@+id/spinnerQuantityUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonAddItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutItemQuantity"
+                android:layout_marginTop="16dp"
+                android:text="Add Item"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ListView
+                android:id="@+id/listViewItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonAddItem"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listViewItems"
+                android:layout_marginTop="16dp"
+                android:text="Clear"
+                android:background="#E91E63"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonClear"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/editTextDiscount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Discount (%)"
+                    android:inputType="numberDecimal"
+                    android:max="100"
+                    android:background="#FFFFFF"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:layout_marginRight="8dp"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/discount_icon"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutOptions"
+                android:layout_marginTop="16dp"
+                android:text="Total Amount: ₹0.00"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewDiscountAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTotalAmount"
+                android:layout_marginTop="16dp"
+                android:text="Discount Amount: ₹0.00"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/buttonGenerateBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDiscountAmount"
+                android:layout_marginTop="16dp"
+                android:text="Generate Bill"
+                android:background="#2196F3"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

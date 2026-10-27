@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:text="Insert Customer Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/editid"
+        android:layout_below="@+id/textView"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/editname"
+        android:layout_below="@+id/editid"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile No."
+        android:id="@+id/editmobile"
+        android:layout_below="@+id/editname"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:lines="3"
+        android:id="@+id/editaddress"
+        android:layout_below="@+id/editmobile"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pin Code"
+        android:id="@+id/editpincode"
+        android:layout_below="@+id/editaddress"/>
+    <Button
+        android:text="Insert Data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editpincode"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
+    <TextView
+        android:text="Search Customer Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/button"
+        android:textColor="#000000"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID"
+        android:id="@+id/editsearchid"
+        android:layout_below="@+id/textView1"/>
+
+    <Button
+        android:text="Search Data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editsearchid"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button1" />
+</RelativeLayout>

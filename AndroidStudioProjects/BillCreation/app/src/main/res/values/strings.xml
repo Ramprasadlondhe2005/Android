@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BillCreation</string>
+
+        <string-array name="quantity_units">
+            <item>Kg</item>
+            <item>g</item>
+            <item>L</item>
+            <item>ml</item>
+            <item>Pcs</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="79dp"
+        android:layout_y="115dp"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_red_light"
+        android:text="Languages Known" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="185dp"
+        android:text="JAVA" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="246dp"
+        android:text="HTML" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="319dp"
+        android:text="PYTHON" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_x="60dp"
+        android:layout_y="386dp"
+        android:text="JS" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="73dp"
+        android:layout_y="486dp"
+        android:text="Show" />
+
+</AbsoluteLayout>

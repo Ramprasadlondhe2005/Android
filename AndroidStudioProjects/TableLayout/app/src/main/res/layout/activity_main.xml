@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/material_dynamic_primary40"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_span="4"
+            android:layout_marginTop="20dp"
+            android:text="Login Window"
+            android:background="@android:color/holo_red_light"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:layout_span="1"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:text="Username:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:layout_span="3"
+            android:hint="Name..."
+            android:textSize="20dp"
+             />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:layout_span="1"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:text="Password:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:layout_span="3"
+            android:hint="Password....."
+            android:textSize="20dp"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_span="4"
+            android:text="Login"
+            android:textSize="20dp" />
+
+    </TableRow>
+</TableLayout>
